@@ -14,6 +14,8 @@ import { LightsTest } from './quick-test/lights-test.js';
 import { SpeakerTest } from './quick-test/speaker-test.js';
 import { HeadphoneTest } from './quick-test/headphone-test.js';
 import { MicrophoneTest } from './quick-test/microphone-test.js';
+import { SticksTest } from './quick-test/sticks-test.js';
+import { TriggersTest } from './quick-test/triggers-test.js';
 
 // One class per test, in accordion/sequence order. Each defines its id,
 // name, icon and content, plus optional init/start/stop/reset/handleInput
@@ -21,6 +23,8 @@ import { MicrophoneTest } from './quick-test/microphone-test.js';
 const TEST_CLASSES = [
   UsbTest,
   ButtonsTest,
+  SticksTest,
+  TriggersTest,
   TrackpadTest,
   ImuTest,
   AdaptiveTest,
