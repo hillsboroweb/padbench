@@ -2,6 +2,8 @@
 
 PadBench is a browser-based calibration and diagnostic lab for PlayStation DualShock 4, DualSense, DualSense Edge, and VR2 controllers. It runs on GitHub Pages and uses WebHID to communicate with supported controllers.
 
+**Live app:** [hillsboroweb.github.io/padbench](https://hillsboroweb.github.io/padbench/)
+
 ## What it can do
 
 - Calibrate stick centers and ranges, with normal and expert flows where supported
