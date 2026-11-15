@@ -1,0 +1,15 @@
+{
+  "name": "PadBench Controller Lab",
+  "short_name": "PadBench",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#0a0f12",
+  "background_color": "#0a0f12",
+  "display": "standalone"
+}
