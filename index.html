@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,7 +51,7 @@
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link ds-i18n" href="#" onclick="show_faq_modal();">Frequently Asked Questions</a>
+            <a class="nav-link ds-i18n" href="#" onclick="show_faq_modal();">FAQ &amp; tips</a>
           </li>
           <li class="nav-item dropdown" id="navbarNavAltMarkup">
             <a class="nav-link dropdown-toggle" id="langMenuButton" role="button" href="#" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
@@ -78,13 +78,13 @@
 
     <section class="bench-intro" aria-labelledby="bench-title">
       <div>
-        <p class="eyebrow">CONTROLLER SERVICE BAY <span class="eyebrow-dot"></span> PRIVATE BY DESIGN</p>
-        <h1 id="bench-title">Know every input.<br><span>Trust every move.</span></h1>
-        <p class="bench-lede">A hands-on controller lab for calibration, live diagnostics, and clear answers about what your sticks are doing.</p>
+        <p class="eyebrow">HI, PLAYER ONE <span class="eyebrow-dot"></span> NO DOWNLOADS, NO DRAMA</p>
+        <h1 id="bench-title">Controller acting up?<br><span>Let’s poke around.</span></h1>
+        <p class="bench-lede">Plug it in, give the sticks a wiggle, and see what’s going on. Run a few checks or try a calibration if you’ve replaced a stick.</p>
       </div>
       <div class="intro-side">
         <span class="intro-orbit" aria-hidden="true"><i></i><b></b></span>
-        <span class="intro-caption">DUALSENSE&nbsp; / &nbsp;DUALSHOCK&nbsp; / &nbsp;VR2</span>
+        <span class="intro-caption">WIGGLE. TEST. REPEAT.</span>
       </div>
     </section>
 
@@ -108,7 +108,7 @@
     </div>
 
     <div id="offlinebar" class="vstack p-2" style="display: none;">
-      <p class="ds-i18n">Please connect a DualShock 4, a DualSense, DualSense Edge or VR2 controller to your computer and press Connect.</p>
+      <p class="ds-i18n">Grab your DualShock 4, DualSense, DualSense Edge, or VR2 controller, plug it in, and hit Connect.</p>
       <button id="btnconnect" type="button" class="btn btn-outline-primary" onclick="connect()">
         <span class="spinner-border spinner-border-sm" style="display: none;" id="connectspinner" aria-hidden="true"></span>
         <span class="ds-i18n">Connect</span>
@@ -158,7 +158,7 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="card">
-                <div class="card-header"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;<span class="ds-i18n">Controller Info</span></div>
+                <div class="card-header"><i class="fas fa-gamepad"></i>&nbsp;&nbsp;<span class="ds-i18n">Your controller</span></div>
                 <div class="card-body">
                   <dl class="row px-3 py-2" id="fwinfo"></dl>
                   <span id="infoshowall" class="pb-4 px-4 row">
@@ -229,7 +229,7 @@
                 <button type="button" class="btn btn-danger ds-btn ds-i18n" onclick="reboot_controller()" id="resetBtn">Reboot controller</button>
 
                 <div class="card" >
-                  <div class="card-header"><i class="fas fa-crosshairs"></i>&nbsp;&nbsp;<span class="ds-i18n">Joystick Info</span></div>
+                  <div class="card-header"><i class="fas fa-crosshairs"></i>&nbsp;&nbsp;<span class="ds-i18n">Stick check</span></div>
                   <div class="vstack px-2">
                     <center>
                       <div style="position: relative; display: inline-block;">
@@ -284,14 +284,14 @@
                   <div class="bench-report" aria-labelledby="report-title">
                     <div>
                       <span class="report-kicker">EXTRA TOOL</span>
-                      <h3 id="report-title">Stick session report</h3>
-                      <p>Capture a short local sample of stick movement and export the readings as JSON.</p>
+                      <h3 id="report-title">Save a stick check</h3>
+                      <p>Play with the sticks for 20 seconds, then grab a little JSON report.</p>
                     </div>
                     <div class="report-action">
-                      <span id="report-status" role="status" aria-live="polite">Ready when connected</span>
-                      <button id="report-start" class="btn btn-outline-primary" type="button">Start 20 sec capture</button>
+        <span id="report-status" role="status" aria-live="polite">Ready when connected</span>
+                      <button id="report-start" class="btn btn-outline-primary" type="button">Record 20 seconds</button>
                     </div>
-                    <small>Your sample stays in this browser unless you download the report.</small>
+                    <small>Just for your notes. It stays right here unless you download it.</small>
                   </div>
                 </div>
               </div>
@@ -400,14 +400,14 @@
       <div class="mb-4" style="border: 2px solid var(--bs-link-color); border-radius: 8px; color: var(--bs-link-color); padding: 12px; background-color: var(--bs-body-bg);">
         <p class="mb-2">
           <i class="fas fa-hand-point-up"></i>&nbsp;&nbsp;
-          <span class="ds-i18n">This utility cannot fix stick drift.</span>
+          <span class="ds-i18n">This tool can’t fix worn-out stick parts.</span>
         </p>
         <p class="mb-2">
-          <span class="ds-i18n">Drift is caused by mechanical parts in the joystick being worn out, and they need to be replaced to fix the drift.</span>
-          <span class="ds-i18n">After they have been replaced, this utility can be used to calibrate the controller to work with the new joysticks.</span></p>
+          <span class="ds-i18n">If the stick is worn, dirty, or damaged, calibration won’t repair it. Replacing the part is the real fix.</span>
+          <span class="ds-i18n">Once you’ve swapped in a new stick, this tool can help calibrate it.</span></p>
         <p class="mb-0">
           <i class="fas fa-regular fa-triangle-exclamation"></i>&nbsp;&nbsp;
-          <span class="ds-i18n">Calibrating without replacing the joysticks may help temporarily, but it may also make the problem worse, with no way to undo it.</span>
+          <span class="ds-i18n">Trying to calibrate a worn-out stick can make things worse, so check it out before saving anything.</span>
         </p>
       </div>
 
@@ -427,7 +427,7 @@
   <footer class="fixed-bottom bg-body-tertiary border-top">
     <div class="container">
       <div class="d-flex flex-column flex-sm-row justify-content-between py-3" id="footbody">
-        <p class="mb-0">PadBench <span class="footer-sep">/</span> Open-source controller lab <span class="footer-sep">/</span> MIT</p>
+        <p class="mb-0">PadBench <span class="footer-sep">·</span> Made for curious thumbs <span class="footer-sep">·</span> Open source</p>
 
         <ul class="list-unstyled d-flex mb-0">
           <li class="ms-3"><a class="text-body" href="https://github.com/hillsboroweb/padbench" aria-label="Source repository"><i class="fa-brands fa-github fs-4"></i></a></li>
