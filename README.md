@@ -31,7 +31,7 @@ Open `http://localhost:8080`. WebHID requires a secure context; localhost qualif
 
 ## Publish
 
-The GitHub Actions workflow builds the static site and deploys it to GitHub Pages whenever `main` changes. Enable **Settings → Pages → Build and deployment → GitHub Actions** in the repository if it is not already selected.
+GitHub Pages serves the static site from the root of the `gh-pages` branch. To update it, run `npm run build:prod` and publish the contents of `dist/` to that branch. The source and build instructions stay on `main`.
 
 ## Credits and license
 
